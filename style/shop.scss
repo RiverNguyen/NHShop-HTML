@@ -93,17 +93,32 @@ img {
     background-color: #f9f1e7;
     margin-bottom: 64px;
     height: 100px;
+
     &-around {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         align-items: center;
-        padding-top: 20px;
+
+        @include m.breakpoint(sm) {
+            justify-content: space-between;
+            padding-top: 36px;
+            flex-direction: column;
+        }
+
+        @include m.breakpoint(md) {
+            justify-content: space-between;
+            padding-top: 20px;
+            flex-direction: row;
+        }
     }
     &-choose {
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        padding-top: 40px;
+
+        @include m.breakpoint(sm) {
+            padding-top: 0;
+        }
 
         &__action {
             display: flex;
@@ -118,6 +133,19 @@ img {
             height: 24px;
             margin-right: 10px;
             cursor: pointer;
+        }
+    }
+
+    &-search {
+        display: none;
+
+        &__show {
+            display: flex;
+            align-items: center;
+        }
+
+        @include m.breakpoint(md) {
+            display: block;
         }
     }
 
@@ -278,6 +306,40 @@ img {
     }
     &-action__like > img {
         padding-right: 2px;
+    }
+}
+
+.page {
+    &-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        list-style: none;
+        padding: 0;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background-color: #b88e2f;
+            margin: 0 10px;
+            border-radius: 10px;
+            transition: ease-in-out 0.3s;
+        }
+        &__link {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        &__item:hover {
+            background-color: #000;
+            opacity: 0.8;
+            cursor: pointer;
+        }
     }
 }
 
