@@ -97,6 +97,7 @@ img {
     &-around {
         display: flex;
         align-items: center;
+        justify-content: center;
 
         @include m.breakpoint(sm) {
             justify-content: space-between;
