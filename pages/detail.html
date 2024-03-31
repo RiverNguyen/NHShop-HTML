@@ -2,39 +2,38 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link
-            rel="shortcut icon"
-            href="../assets/images/logo.svg"
-            type="image/x-icon"
-        />
+        <link rel="icon" type="image/svg+xml" href="../assets/logo.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../scss/detailproduct.scss" />
+        <title>Detail Product</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
         <link
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
+            href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
         />
-        <title>Detail Product</title>
+        <link rel="stylesheet" href="../style/detail.scss" />
     </head>
     <body>
         <header class="header">
             <div class="container">
                 <div class="header-inner">
-                    <a href="../index.html" class="header__logo">
+                    <a href="#" class="header__logo">
                         <img src="../assets/logo-1.svg" alt="" />
                     </a>
                     <div class="button-mobile"><button>=</button></div>
                     <nav class="main-menu">
                         <ul class="main-menu__list">
                             <li class="main-menu__item">
-                                <a href="../index.html" class="main-menu__link"
-                                    >Home</a
-                                >
+                                <a href="" class="main-menu__link">Home</a>
                             </li>
                             <li class="main-menu__item">
-                                <a href="#" class="main-menu__link">Shop</a>
+                                <a href="./shop.html" class="main-menu__link"
+                                    >Shop</a
+                                >
                             </li>
                             <li class="main-menu__item">
                                 <a href="" class="main-menu__link">About</a>
@@ -65,550 +64,494 @@
                         </div>
                     </div>
                 </div>
-                <div class="header__pagePath">
-                    <span class="path1">Home</span>
-                    <img
-                        class="__nextPath"
-                        src="../assets/icons/next.svg"
-                        alt=""
-                    />
-                    <span class="path2">Shop</span>
-                    <img
-                        class="__nextPath"
-                        src="../assets/icons/next.svg"
-                        alt=""
-                    />
-                    <span class="presentPath">Asgaard sofa</span>
-                </div>
             </div>
         </header>
-        <!-- End Header  -->
-        <section class="detailproduct">
+
+        <section class="filter">
             <div class="container">
-                <div class="detailproduct__main">
-                    <div class="detailproduct__images">
-                        <ul class="detailproduct__thumbnails">
-                            <li class="detailproduct__thumbitems">
-                                <img
-                                    src="https://picsum.photos/id/11/80/80"
-                                    alt=""
-                                />
-                            </li>
-                            <li class="detailproduct__thumbitems">
-                                <img
-                                    src="https://picsum.photos/id/11/80/80"
-                                    alt=""
-                                />
-                            </li>
-                            <li class="detailproduct__thumbitems">
-                                <img
-                                    src="https://picsum.photos/id/11/80/80"
-                                    alt=""
-                                />
-                            </li>
-                            <li class="detailproduct__thumbitems">
-                                <img
-                                    src="https://picsum.photos/id/11/80/80"
-                                    alt=""
-                                />
-                            </li>
-                        </ul>
-                        <div class="detailproduct__showingImage">
+                <div class="filter-around">
+                    <div class="filter-choose">
+                        <div class="filter-choose__action">
+                            <span class="filter__text">Home</span>
+                            <img src="../assets/icons/next.svg" alt="" />
+                            <span class="filter__text">Shop</span>
+                            <img src="../assets/icons/next.svg" alt="" />
+                        </div>
+                        <!-- <div class="filter-choose__logo"></div>
+                        <div class="filter-choose__logo"></div> -->
+                        <div class="filter-show">
+                            <span class="filter-show__text">Asgaard sofa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container">
+                <div class="products-around">
+                    <div class="products-img">
+                        <div class="products-img__gallery">
+                            <ul class="products-img__list">
+                                <li class="products-img__item">
+                                    <img
+                                        src="https://picsum.photos/id/12/3840/2160"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="products-img__item">
+                                    <img
+                                        src="https://picsum.photos/id/12/3840/2160"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="products-img__item">
+                                    <img
+                                        src="https://picsum.photos/id/12/3840/2160"
+                                        alt=""
+                                    />
+                                </li>
+                                <li class="products-img__item">
+                                    <img
+                                        src="https://picsum.photos/id/12/3840/2160"
+                                        alt=""
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="products-img__thumbnail">
                             <img
-                                src="https://picsum.photos/id/11/500/500"
+                                src="https://picsum.photos/id/12/3840/2160"
                                 alt=""
                             />
                         </div>
                     </div>
-                    <div class="detailproduct__info">
-                        <div class="detailproduct__mainInfo">
-                            <p class="detailproduct__name">Asgaard sofa</p>
-                            <div class="detailproduct__price">
-                                <span class="detailproduct__newprice"
-                                    >25.000.000đ</span
-                                >
-                                <span class="detailproduct__oldprice"
-                                    >25.000.000đ</span
-                                >
+                    <div class="products-info">
+                        <h2 class="products__name">Asgaard sofa</h2>
+                        <h4 class="products__price">25.000.000đ</h4>
+                        <div class="products-info__judge">
+                            <div class="products__star">
+                                <img src="../assets/icons/star.svg" alt="" />
+                                <img src="../assets/icons/star.svg" alt="" />
+                                <img src="../assets/icons/star.svg" alt="" />
+                                <img src="../assets/icons/star.svg" alt="" />
+                                <img
+                                    src="../assets/icons/star-half.svg"
+                                    alt=""
+                                />
                             </div>
-                            <div class="detailproduct__vote">
-                                <div class="detailproduct__stars">
-                                    <img
-                                        src="../assets/icons/star.png"
-                                        class="detailproduct__star"
-                                        alt=""
-                                    />
-                                    <img
-                                        src="../assets/icons/star.png"
-                                        class="detailproduct__star"
-                                        alt=""
-                                    />
-                                    <img
-                                        src="../assets/icons/star.png"
-                                        class="detailproduct__star"
-                                        alt=""
-                                    />
-                                    <img
-                                        src="../assets/icons/star.png"
-                                        class="detailproduct__star"
-                                        alt=""
-                                    />
-                                    <img
-                                        src="../assets/icons/half_star.png"
-                                        class="detailproduct__halfstar"
-                                        alt=""
-                                    />
-                                </div>
-                                <span class="detailproduct__totalvote">
-                                    5 Customer Review
-                                </span>
+                            <div class="products__review">
+                                <span>5 Customer Review</span>
                             </div>
-                            <p class="detailproduct__introduce">
+                        </div>
+                        <div class="products-description">
+                            <p>
                                 Setting the bar as one of the loudest speakers
                                 in its class, the Kilburn is a compact,
                                 stout-hearted hero with a well-balanced audio
                                 which boasts a clear midrange and extended highs
                                 for a sound.
                             </p>
-                            <div class="detailproduct__sizes">
-                                <p>Size</p>
-                                <div class="detailproduct__sizebtns">
-                                    <span
-                                        style="background: #b88e2f; color: #fff"
-                                        class="detailproduct__sizeItem"
-                                        >L</span
-                                    >
-                                    <span class="detailproduct__sizeItem"
-                                        >XL</span
-                                    >
-                                    <span class="detailproduct__sizeItem"
-                                        >XS</span
-                                    >
-                                </div>
-                            </div>
-                            <div class="detailproduct__colors">
-                                <p>Color</p>
-                                <div class="detailproduct__colorbtns">
-                                    <div class="detailproduct__colorItem">
-                                        <span
-                                            style="background: #816dfa"
-                                            class="__circle"
-                                        ></span>
-                                    </div>
-                                    <div class="detailproduct__colorItem">
-                                        <span
-                                            style="background: #000000"
-                                            class="__circle"
-                                        ></span>
-                                    </div>
-                                    <div class="detailproduct__colorItem">
-                                        <span
-                                            style="background: #b88e2f"
-                                            class="__circle"
-                                        ></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="detailproduct__action">
-                                <div class="detailproduct__changeAmount">
-                                    <span class="minus">-</span>
-                                    <span class="detailproduct__amount">1</span>
-                                    <span class="plus">+</span>
-                                </div>
-                                <div class="detailproduct__add_compare">
-                                    <a href="./cart.html">
-                                        <button
-                                            class="detailproduct__addtocart"
-                                        >
-                                            Add To Cart
-                                        </button>
-                                    </a>
-                                    <button class="detailproduct__compare">
-                                        + Compare
-                                    </button>
-                                </div>
-                            </div>
                         </div>
-                        <div class="__crossline"></div>
-                        <ul class="detailproduct__type">
-                            <li>
-                                <p>SKU</p>
-                                <span>:</span>
-                                <span>SS001</span>
-                            </li>
-                            <li>
-                                <p>Category</p>
-                                <span>:</span>
-                                <span>Sofas</span>
-                            </li>
-                            <li>
-                                <p>Tags</p>
-                                <span>:</span>
-                                <span>Sofa, Chair, Home, Shop</span>
-                            </li>
-                            <li>
-                                <p>Share</p>
-                                <span>:</span>
-                                <span class="__social">
-                                    <img src="../assets/icons/fb.png" alt="" />
+                        <div class="products-info__size">
+                            <h5 class="products__text">Size:</h5>
+                            <span class="products__size">L</span>
+                            <span class="products__size">M</span>
+                            <span class="products__size">S</span>
+                        </div>
+                        <div class="products-color">
+                            <h5 class="products__text">Color:</h5>
+                            <span class="products-color__violet"></span>
+                            <span class="products-color__black"></span>
+                            <span class="products-color__brown"></span>
+                        </div>
+                        <div class="products-btn">
+                            <button class="products-btn__count">
+                                <span class="minus">-</span>
+                                1
+                                <span class="plus">+</span>
+                            </button>
+                            <button class="products__btn">Add to cart</button>
+                            <button class="products__btn">+ Compare</button>
+                        </div>
+                        <hr class="hr" />
+                        <div class="products-info__more">
+                            <div class="products__group">
+                                <span class="products__title">SKU</span>
+                                <span class="products__colons">:</span>
+                                <span class="products__description">SS001</span>
+                            </div>
+                            <div class="products__group">
+                                <span class="products__title">Category</span>
+                                <span class="products__colons">:</span>
+
+                                <span class="products__description">Sofas</span>
+                            </div>
+                            <div class="products__group">
+                                <span class="products__title">Tags</span>
+                                <span class="products__colons">:</span>
+                                <span class="products__description"
+                                    >Sofa, Chair, Home, Shop</span
+                                >
+                            </div>
+                            <div class="products__group">
+                                <span class="products__title">Share</span>
+                                <span class="products__colons">:</span>
+
+                                <span class="products__description">
+                                    <img src="../assets/icons/fb.svg" alt="" />
                                     <img
-                                        src="../assets/icons/linkein.png"
+                                        src="../assets/icons/linkedin.svg"
                                         alt=""
                                     />
                                     <img
-                                        src="../assets/icons/twitter.png"
+                                        src="../assets/icons/twitter.svg"
                                         alt=""
                                     />
                                 </span>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End Detail product  -->
-        <section class="moreinfo">
+
+        <hr class="hr" />
+
+        <section class="description">
             <div class="container">
-                <div class="moreinfo__containlist">
-                    <div class="moreinfo__list">
-                        <span style="color: #000" class="moreinfo__desc"
-                            >Description</span
-                        >
-                        <span class="moreinfo__additional"
-                            >Additional Information</span
-                        >
-                        <span class="moreinfo__review">Reviews [5]</span>
+                <div class="description-header">
+                    <div class="description-header__title">
+                        <h2 class="description__title active">Description</h2>
+                        <h2 class="description__title">
+                            Additional Information
+                        </h2>
+                        <h2 class="description__title">Reviews [5]</h2>
                     </div>
-                </div>
-                <div class="moreinfo__showing">
-                    <p class="">
-                        Embodying the raw, wayward spirit of rock ‘n’ roll, the
-                        Kilburn portable active stereo speaker takes the
-                        unmistakable look and sound of Marshall, unplugs the
-                        chords, and takes the show on the road.
-                        <br />
-                        <br />
-                        Weighing in under 7 pounds, the Kilburn is a lightweight
-                        piece of vintage styled engineering. Setting the bar as
-                        one of the loudest speakers in its class, the Kilburn is
-                        a compact, stout-hearted hero with a well-balanced audio
-                        which boasts a clear midrange and extended highs for a
-                        sound that is both articulate and pronounced. The
-                        analogue knobs allow you to fine tune the controls to
-                        your personal preferences while the guitar-influenced
-                        leather strap enables easy and stylish travel.
-                    </p>
-                </div>
-                <div class="moreinfo__showingImage">
-                    <span class="__img">
-                        <img src="https://picsum.photos/id/11/600/600" alt="" />
-                    </span>
-                    <span class="__img">
-                        <img src="https://picsum.photos/id/11/600/600" alt="" />
-                    </span>
+                    <div class="description-body">
+                        <p>
+                            Embodying the raw, wayward spirit of rock ‘n’ roll,
+                            the Kilburn portable active stereo speaker takes the
+                            unmistakable look and sound of Marshall, unplugs the
+                            chords, and takes the show on the road.
+                        </p>
+                        <p>
+                            Weighing in under 7 pounds, the Kilburn is a
+                            lightweight piece of vintage styled engineering.
+                            Setting the bar as one of the loudest speakers in
+                            its class, the Kilburn is a compact, stout-hearted
+                            hero with a well-balanced audio which boasts a clear
+                            midrange and extended highs for a sound that is both
+                            articulate and pronounced. The analogue knobs allow
+                            you to fine tune the controls to your personal
+                            preferences while the guitar-influenced leather
+                            strap enables easy and stylish travel.
+                        </p>
+                    </div>
+                    <div class="description-image">
+                        <img
+                            src="https://picsum.photos/id/12/3840/2160"
+                            alt=""
+                        />
+                        <img
+                            src="https://picsum.photos/id/12/3840/2160"
+                            alt=""
+                        />
+                    </div>
                 </div>
             </div>
         </section>
-        <div class="__crossline_detailpage"></div>
-        <!-- End More Info -->
+        <hr class="hr" />
         <section class="product">
             <div class="container">
-                <div class="product__relatedTitle">
-                    <h4>Related Products</h4>
-                </div>
-                <div class="product__list">
-                    <div class="product__row">
-                        <div class="product__item">
-                            <div
-                                style="background-color: #e97171"
-                                class="product__status"
+                <h1 class="related-product__title">Related Product</h1>
+                <div class="product-list">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img
+                                src="https://picsum.photos/id/10/3840/2160"
+                                alt=""
+                                class="product__thumbnail"
+                            />
+                            <span class="product-sale">30%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product__name">
+                                <a href="" class="product__link">Syltherine</a>
+                            </h3>
+                            <a href="" class="product__category"
+                                >Stylish cafe chair</a
                             >
-                                <p>-50%</p>
-                            </div>
-                            <div class="product__imageItem">
-                                <img
-                                    src="https://picsum.photos/id/55/285/300"
-                                    alt=""
-                                    class=""
-                                />
-                            </div>
-                            <div class="product__infoItem">
-                                <p class="product__nameItem">Syltherine</p>
-                                <p class="product__cateItem">
-                                    Stylish cafe chair
-                                </p>
-                                <div class="product__priceItem">
-                                    <span class="product__newprice"
-                                        >5.000.000</span
-                                    >
-                                    <span class="product__oldprice"
-                                        >5.000.000</span
-                                    >
-                                </div>
-                            </div>
-                            <div class="product__feature">
-                                <div class="__btns">
-                                    <button class="__view">View product</button>
-                                    <button class="__addtocart">
-                                        Add to cart
-                                    </button>
-                                    <div class="__more">
-                                        <span class="__share"
-                                            ><img
-                                                src="../assets/icons/gridicons_share.png"
-                                                alt=""
-                                            />
-                                            Share</span
-                                        >
-                                        <span class="__share"
-                                            ><img
-                                                src="../assets/icons/compare-svgrepo-com 1.png"
-                                                alt=""
-                                            />
-                                            Compare</span
-                                        >
-                                        <span class="__like"
-                                            ><img
-                                                src="../assets/icons/Heart.png"
-                                                alt=""
-                                            />
-                                            Like</span
-                                        >
-                                    </div>
-                                </div>
+                            <div class="product-price">
+                                <span class="product-price__new">$200</span>
+                                <span class="product-price__old">$300</span>
                             </div>
                         </div>
-                        <!-- End Prod  -->
-                        <div class="product__item">
-                            <div
-                                style="background-color: #2ec1ac"
-                                class="product__status"
+                        <div class="product-actions">
+                            <button class="btn product-action__quickview">
+                                Quick View
+                            </button>
+                            <button class="btn product-action__addtocart">
+                                Add To Cart
+                            </button>
+                            <div class="product-actions-more">
+                                <span class="product-action__share"
+                                    ><img
+                                        src="../assets/icon-share.svg"
+                                        alt=""
+                                    />Share</span
+                                >
+                                <span class="product-action__compare"
+                                    ><img
+                                        src="../assets/icon-compare.svg"
+                                        alt=""
+                                /></span>
+                                <span class="product-action__like"
+                                    ><img
+                                        src="../assets/icon-heart.svg"
+                                        alt=""
+                                    />Like</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img
+                                src="https://picsum.photos/id/10/3840/2160"
+                                alt=""
+                                class="product__thumbnail"
+                            />
+                            <span class="product-sale">30%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product__name">
+                                <a href="" class="product__link">Syltherine</a>
+                            </h3>
+                            <a href="" class="product__category"
+                                >Stylish cafe chair</a
                             >
-                                <p>New</p>
-                            </div>
-                            <div class="product__imageItem">
-                                <img
-                                    src="https://picsum.photos/id/55/285/300"
-                                    alt=""
-                                    class=""
-                                />
-                            </div>
-                            <div class="product__infoItem">
-                                <p class="product__nameItem">Syltherine</p>
-                                <p class="product__cateItem">
-                                    Stylish cafe chair
-                                </p>
-                                <div class="product__priceItem">
-                                    <span class="product__newprice"
-                                        >5.000.000</span
-                                    >
-                                    <span class="product__oldprice"
-                                        >5.000.000</span
-                                    >
-                                </div>
-                            </div>
-                            <div class="product__feature">
-                                <div class="__btns">
-                                    <button class="__view">View product</button>
-                                    <button class="__addtocart">
-                                        Add to cart
-                                    </button>
-                                    <div class="__more">
-                                        <span class="__share"
-                                            ><img
-                                                src="../assets/icons/gridicons_share.png"
-                                                alt=""
-                                            />
-                                            Share</span
-                                        >
-                                        <span class="__share"
-                                            ><img
-                                                src="../assets/icons/compare-svgrepo-com 1.png"
-                                                alt=""
-                                            />
-                                            Compare</span
-                                        >
-                                        <span class="__like"
-                                            ><img
-                                                src="../assets/icons/Heart.png"
-                                                alt=""
-                                            />
-                                            Like</span
-                                        >
-                                    </div>
-                                </div>
+                            <div class="product-price">
+                                <span class="product-price__new">$200</span>
+                                <span class="product-price__old">$300</span>
                             </div>
                         </div>
-                        <!-- End Prod  -->
-                        <div class="product__item">
-                            <div class="product__imageItem">
-                                <img
-                                    src="https://picsum.photos/id/55/285/300"
-                                    alt=""
-                                    class=""
-                                />
-                            </div>
-                            <div class="product__infoItem">
-                                <p class="product__nameItem">Syltherine</p>
-                                <p class="product__cateItem">
-                                    Stylish cafe chair
-                                </p>
-                                <div class="product__priceItem">
-                                    <span class="product__newprice"
-                                        >5.000.000</span
-                                    >
-                                    <span class="product__oldprice"
-                                        >5.000.000</span
-                                    >
-                                </div>
-                            </div>
-                            <div class="product__feature">
-                                <div class="__btns">
-                                    <button class="__view">View product</button>
-                                    <button class="__addtocart">
-                                        Add to cart
-                                    </button>
-                                    <div class="__more">
-                                        <span class="__share"
-                                            ><img
-                                                src="../assets/icons/gridicons_share.png"
-                                                alt=""
-                                            />
-                                            Share</span
-                                        >
-                                        <span class="__share"
-                                            ><img
-                                                src="../assets/icons/compare-svgrepo-com 1.png"
-                                                alt=""
-                                            />
-                                            Compare</span
-                                        >
-                                        <span class="__like"
-                                            ><img
-                                                src="../assets/icons/Heart.png"
-                                                alt=""
-                                            />
-                                            Like</span
-                                        >
-                                    </div>
-                                </div>
+                        <div class="product-actions">
+                            <button class="btn product-action__quickview">
+                                Quick View
+                            </button>
+                            <button class="btn product-action__addtocart">
+                                Add To Cart
+                            </button>
+                            <div class="product-actions-more">
+                                <span class="product-action__share"
+                                    ><img
+                                        src="../assets/icon-share.svg"
+                                        alt=""
+                                    />Share</span
+                                >
+                                <span class="product-action__compare"
+                                    ><img
+                                        src="../assets/icon-compare.svg"
+                                        alt=""
+                                /></span>
+                                <span class="product-action__like"
+                                    ><img
+                                        src="../assets/icon-heart.svg"
+                                        alt=""
+                                    />Like</span
+                                >
                             </div>
                         </div>
-                        <!-- End Prod  -->
-                        <div class="product__item">
-                            <div class="product__imageItem">
-                                <img
-                                    src="https://picsum.photos/id/55/285/300"
-                                    alt=""
-                                    class=""
-                                />
-                            </div>
-                            <div class="product__infoItem">
-                                <p class="product__nameItem">Syltherine</p>
-                                <p class="product__cateItem">
-                                    Stylish cafe chair
-                                </p>
-                                <div class="product__priceItem">
-                                    <span class="product__newprice"
-                                        >5.000.000</span
-                                    >
-                                    <span class="product__oldprice"
-                                        >5.000.000</span
-                                    >
-                                </div>
-                            </div>
-                            <div class="product__feature">
-                                <div class="__btns">
-                                    <button class="__view">View product</button>
-                                    <button class="__addtocart">
-                                        Add to cart
-                                    </button>
-                                    <div class="__more">
-                                        <span class="__share"
-                                            ><img
-                                                src="../assets/icons/gridicons_share.png"
-                                                alt=""
-                                            />
-                                            Share</span
-                                        >
-                                        <span class="__share"
-                                            ><img
-                                                src="../assets/icons/compare-svgrepo-com 1.png"
-                                                alt=""
-                                            />
-                                            Compare</span
-                                        >
-                                        <span class="__like"
-                                            ><img
-                                                src="../assets/icons/Heart.png"
-                                                alt=""
-                                            />
-                                            Like</span
-                                        >
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img
+                                src="https://picsum.photos/id/10/3840/2160"
+                                alt=""
+                                class="product__thumbnail"
+                            />
+                            <span class="product-sale">30%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product__name">
+                                <a href="" class="product__link">Syltherine</a>
+                            </h3>
+                            <a href="" class="product__category"
+                                >Stylish cafe chair</a
+                            >
+                            <div class="product-price">
+                                <span class="product-price__new">$200</span>
+                                <span class="product-price__old">$300</span>
                             </div>
                         </div>
-                        <!-- End Prod  -->
+                        <div class="product-actions">
+                            <button class="btn product-action__quickview">
+                                Quick View
+                            </button>
+                            <button class="btn product-action__addtocart">
+                                Add To Cart
+                            </button>
+                            <div class="product-actions-more">
+                                <span class="product-action__share"
+                                    ><img
+                                        src="../assets/icon-share.svg"
+                                        alt=""
+                                    />Share</span
+                                >
+                                <span class="product-action__compare"
+                                    ><img
+                                        src="../assets/icon-compare.svg"
+                                        alt=""
+                                /></span>
+                                <span class="product-action__like"
+                                    ><img
+                                        src="../assets/icon-heart.svg"
+                                        alt=""
+                                    />Like</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img
+                                src="https://picsum.photos/id/10/3840/2160"
+                                alt=""
+                                class="product__thumbnail"
+                            />
+                            <span class="product-sale">30%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product__name">
+                                <a href="" class="product__link">Syltherine</a>
+                            </h3>
+                            <a href="" class="product__category"
+                                >Stylish cafe chair</a
+                            >
+                            <div class="product-price">
+                                <span class="product-price__new">$200</span>
+                                <span class="product-price__old">$300</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn product-action__quickview">
+                                Quick View
+                            </button>
+                            <button class="btn product-action__addtocart">
+                                Add To Cart
+                            </button>
+                            <div class="product-actions-more">
+                                <span class="product-action__share"
+                                    ><img
+                                        src="../assets/icon-share.svg"
+                                        alt=""
+                                    />Share</span
+                                >
+                                <span class="product-action__compare"
+                                    ><img
+                                        src="../assets/icon-compare.svg"
+                                        alt=""
+                                /></span>
+                                <span class="product-action__like"
+                                    ><img
+                                        src="../assets/icon-heart.svg"
+                                        alt=""
+                                    />Like</span
+                                >
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="product__showmore">
-                    <button class="product__showmorebtn">Show More</button>
+
+                <!--* End .product-item *-->
+
+                <div class="btn-showmore">
+                    <button class="btn-showmore__action">Show more</button>
                 </div>
             </div>
         </section>
-        <div class="__crosslinefooter"></div>
-        <!-- End Related Product -->
-        <section class="footer">
+        <hr class="hr" />
+
+        <!--End .banner-->
+
+        <!--End .news-->
+
+        <!--End .shop-->
+
+        <!--End .blog-->
+
+        <!--End .services-->
+        <footer class="footer">
             <div class="container">
-                <div class="footer__list">
-                    <ul class="footer__brand">
-                        <li class="footer__brandname">Funiro.</li>
-                        <li class="footer__address">
-                            400 University Drive Suite 200 Coral
-                            <br />Gables,<br />
-                            FL 33134 USA
-                        </li>
-                    </ul>
-                    <ul class="footer__links">
-                        <li class="footer__namelinks">Links</li>
-                        <li class="footer__linksitem"><a href="">Home</a></li>
-                        <li class="footer__linksitem"><a href="">Shop</a></li>
-                        <li class="footer__linksitem"><a href="">About</a></li>
-                        <li class="footer__linksitem">
-                            <a href="">Contact</a>
-                        </li>
-                    </ul>
-                    <ul class="footer__helps">
-                        <li class="footer__namehepls">Helps</li>
-                        <li class="footer__heplsitem">
-                            <a href="">Payment Options</a>
-                        </li>
-                        <li class="footer__heplsitem">
-                            <a href="">Returns</a>
-                        </li>
-                        <li class="footer__heplsitem">
-                            <a href="">Privacy Policies</a>
-                        </li>
-                    </ul>
-                    <ul class="footer__newsletter">
-                        <li class="footer__namenewletter">Newsletter</li>
-                        <li class="footer__subcribe">
-                            <form action="#">
-                                <input
-                                    type="email"
-                                    placeholder="Enter Your Email Address"
-                                />
-                                <button type="submit">SUBSCRIBE</button>
-                            </form>
-                        </li>
-                    </ul>
+                <div class="footer-list">
+                    <div class="footer-item">
+                        <img src="../assets/logo.svg" alt="" />
+                        <p class="footer__address">
+                            400 University Drive Suite 200 Coral Gables, FL
+                            33134 USA
+                        </p>
+                    </div>
+                    <div class="footer-nav">
+                        <div class="footer-item">
+                            <h2 class="footer__title">Links</h2>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Home</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Shop</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Blog</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-item">
+                            <h2 class="footer__title">Help</h2>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link"
+                                        >Payment Options</a
+                                    >
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link"
+                                        >Returns</a
+                                    >
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link"
+                                        >Privacy Policies</a
+                                    >
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <h2 class="footer__title">Newsletter</h2>
+                        <form action="" class="newsletter">
+                            <input
+                                type="text"
+                                class="newsletter__input"
+                                placeholder="Enter Your Email Address"
+                            />
+                            <button class="newsletter__btn">Subscribe</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="footer__license">
-                    <p>2023 furino. All rights reverved</p>
-                </div>
+                <p class="copyright">2023 furino. All rights revered</p>
             </div>
-        </section>
-        <!-- End Footer  -->
+        </footer>
     </body>
 </html>

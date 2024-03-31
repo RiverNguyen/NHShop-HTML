@@ -15,7 +15,7 @@
             rel="stylesheet"
             href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
         />
-        <link rel="stylesheet" href="../style/cart.scss" />
+        <link rel="stylesheet" href="../style/checkout.scss" />
     </head>
     <body>
         <header class="header">
@@ -74,119 +74,188 @@
             />
         </section>
         <!--End .banner-->
-        <div class="cart">
+
+        <div class="checkout">
             <div class="container">
-                <div class="cart-around">
-                    <table class="cart-table">
-                        <thead class="cart-table__header">
-                            <tr>
-                                <th></th>
-                                <th>Product</th>
-                                <th>Price</th>
-                                <th>Quantity</th>
-                                <th>Subtotal</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody class="cart-table__body">
-                            <tr>
-                                <td>
-                                    <img
-                                        src="https://picsum.photos/id/10/3840/2160"
-                                        alt=""
-                                        class="cart-table__item"
-                                    />
-                                </td>
-                                <td>Asgaard sofa</td>
-                                <td>25.000.000đ</td>
-                                <td>
-                                    <form class="cart-table__button">
-                                        <button class="minus">-</button>
-                                        <input type="text" placeholder="1" />
-                                        <button class="plus">+</button>
-                                    </form>
-                                </td>
-                                <td class="custom-td">25.000.000đ</td>
-                                <td>
-                                    <img
-                                        src="../assets/icons/trash.svg"
-                                        alt=""
-                                    />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img
-                                        src="https://picsum.photos/id/10/3840/2160"
-                                        alt=""
-                                        class="cart-table__item"
-                                    />
-                                </td>
-                                <td>Asgaard sofa</td>
-                                <td>25.000.000đ</td>
-                                <td>
-                                    <form class="cart-table__button">
-                                        <button class="minus">-</button>
-                                        <input type="text" placeholder="1" />
-                                        <button class="plus">+</button>
-                                    </form>
-                                </td>
-                                <td class="custom-td">25.000.000đ</td>
-                                <td>
-                                    <img
-                                        src="../assets/icons/trash.svg"
-                                        alt=""
-                                    />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img
-                                        src="https://picsum.photos/id/10/3840/2160"
-                                        alt=""
-                                        class="cart-table__item"
-                                    />
-                                </td>
-                                <td>Asgaard sofa</td>
-                                <td>25.000.000đ</td>
-                                <td>
-                                    <form class="cart-table__button">
-                                        <button class="minus">-</button>
-                                        <input type="text" placeholder="1" />
-                                        <button class="plus">+</button>
-                                    </form>
-                                </td>
-                                <td class="custom-td">25.000.000đ</td>
-                                <td>
-                                    <img
-                                        src="../assets/icons/trash.svg"
-                                        alt=""
-                                    />
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="cart-total">
-                        <div class="cart-total__title">
-                            <h2>Cart Totals</h2>
-                        </div>
-                        <div class="cart-total__body">
-                            <div class="cart-total__subtotal">
-                                <span>Subtotal</span>
-                                <span>25.000.000đ</span>
+                <h2 class="checkout-title">Billing details</h2>
+                <div class="checkout-around">
+                    <form class="checkout-form">
+                        <div class="checkout-form__name">
+                            <div class="checkout-form__firstname">
+                                <label for="" class="checkout-form__label"
+                                    >First Name:</label
+                                >
+                                <input
+                                    type="text"
+                                    class="checkout-form__input"
+                                    placeholder="First Name..."
+                                />
                             </div>
-                            <div class="cart-total__subtotal">
-                                <span>Total</span>
-                                <span class="total__money">25.000.000đ</span>
+                            <div class="checkout-form__lastname">
+                                <label for="" class="checkout-form__label"
+                                    >Last Name:</label
+                                >
+                                <input
+                                    type="text"
+                                    class="checkout-form__input"
+                                    placeholder="Last Name..."
+                                />
                             </div>
                         </div>
-                        <div class="cart-total__button">
-                            <button>Check Out</button>
+                        <div class="checkout-form__item">
+                            <label for="" class="checkout-form__label"
+                                >Company Name (Optional):
+                            </label>
+                            <input
+                                type="text"
+                                class="checkout-form__input"
+                                placeholder="Company Name (Optional)..."
+                            />
+                        </div>
+                        <div class="checkout-form__item">
+                            <label for="" class="checkout-form__label"
+                                >Country / Region:
+                            </label>
+                            <select
+                                class="checkout-form__input"
+                                title="Select an option"
+                            >
+                                <option value="0">Hà Nội</option>
+                                <option value="1">TP. Hồ Chí Minh</option>
+                            </select>
+                        </div>
+                        <div class="checkout-form__item">
+                            <label for="" class="checkout-form__label"
+                                >Street address:
+                            </label>
+                            <input
+                                type="text"
+                                class="checkout-form__input"
+                                placeholder="Street address..."
+                            />
+                        </div>
+                        <div class="checkout-form__item">
+                            <label for="" class="checkout-form__label"
+                                >Town / City:
+                            </label>
+                            <input
+                                type="text"
+                                class="checkout-form__input"
+                                placeholder="Town / City..."
+                            />
+                        </div>
+                        <div class="checkout-form__item">
+                            <label for="" class="checkout-form__label"
+                                >Province:
+                            </label>
+                            <select
+                                class="checkout-form__input"
+                                title="Select an option"
+                            >
+                                <option value="0">Hoài Đức</option>
+                                <option value="1">Long Biên</option>
+                            </select>
+                        </div>
+                        <div class="checkout-form__item">
+                            <label for="" class="checkout-form__label"
+                                >ZIP code:
+                            </label>
+                            <input
+                                type="text"
+                                class="checkout-form__input"
+                                placeholder="ZIP code..."
+                            />
+                        </div>
+                        <div class="checkout-form__item">
+                            <label for="" class="checkout-form__label"
+                                >Phone:
+                            </label>
+                            <input
+                                type="text"
+                                class="checkout-form__input"
+                                placeholder="Phone..."
+                            />
+                        </div>
+                        <div class="checkout-form__item">
+                            <label for="" class="checkout-form__label"
+                                >Email address:
+                            </label>
+                            <input
+                                type="email"
+                                class="checkout-form__input"
+                                placeholder="Email address..."
+                            />
+                        </div>
+                        <div class="checkout-form__item">
+                            <label for="" class="checkout-form__label"></label>
+
+                            <textarea
+                                name=""
+                                id=""
+                                cols="30"
+                                class="checkout-form__input"
+                                rows="10"
+                                placeholder="Additional information..."
+                            ></textarea>
+                        </div>
+                    </form>
+                    <div class="checkout-detail">
+                        <div class="checkout-detail__header">
+                            <ul>
+                                <li>Product</li>
+                                <li>Asgaard sofa x 1</li>
+                                <li>Subtotal</li>
+                                <li>Total</li>
+                            </ul>
+                            <ul>
+                                <li>Subtotal</li>
+                                <li>25.000.000đ</li>
+                                <li>25.000.000đ</li>
+                                <li class="total-price">25.000.000đ</li>
+                            </ul>
+                        </div>
+                        <hr />
+                        <div class="checkout-detail__body">
+                            <input
+                                type="radio"
+                                class="checkout-detail__radio"
+                                name="checkout"
+                                id=""
+                            />Direct Bank Transfer
+                            <p>
+                                Make your payment directly into our bank
+                                account. Please use your Order ID as the payment
+                                reference. Your order will not be shipped until
+                                the funds have cleared in our account.
+                            </p>
+                            <input
+                                type="radio"
+                                class="checkout-detail__radio"
+                                name="checkout"
+                                id=""
+                            />Direct Bank Transfer
+                            <br />
+                            <input
+                                type="radio"
+                                class="checkout-detail__radio"
+                                name="checkout"
+                                id=""
+                            />Cash On Delivery
+                            <p>
+                                Your personal data will be used to support your
+                                experience throughout this website, to manage
+                                access to your account, and for other purposes
+                                described in our <b>privacy policy.</b>
+                            </p>
+                            <button class="checkout-detail__button">
+                                Place order
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <section class="services">
             <div class="container-fluid">
                 <div class="service-list">
